@@ -33,9 +33,27 @@
 
 # input 返回的数据类型是string
 
-number = 100
-guess = input('请输入你猜的数：')
-if number == int(guess):
-    print('win')
+# number = 100
+# guess = input('请输入你猜的数：')
+# if number == int(guess):
+#     print('win')
+# else:
+#     print('lose')
+
+
+height = 1.75
+weight = 80.5
+
+bmi = weight / height / height
+if bmi < 18.5:
+    print('过轻')
+elif 18.5 <= bmi < 25:
+    print('正常')
+elif 25 <= bmi < 28:
+    print('过重')
+elif 28 <= bmi <= 32:
+    print('肥胖')
+elif bmi > 32:
+    print('严重肥胖')
 else:
-    print('lose')
+    print('您的输入有误')
